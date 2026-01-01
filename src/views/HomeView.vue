@@ -488,7 +488,7 @@ onMounted(() => {
           <h3 class="text-white font-bold mb-2">Starter</h3>
           <p class="text-slate-400 text-sm">Perfect for individuals and small projects.</p>
           <div class="font-extrabold tracking-tighter text-blue-500 flex-shrink-0 min-w-0 mt-2">
-            <span class="text-4xl">$29 </span><span class="text-white text-xl">/mounth</span>
+            <span class="text-4xl">$29 </span><span class="text-white text-xl">/month</span>
           </div>
           <button
             type="button"
@@ -608,7 +608,7 @@ onMounted(() => {
           <h3 class="text-white font-bold mb-2">Professional</h3>
           <p class="text-slate-400 text-sm">For growing teams and businesses.</p>
           <div class="font-extrabold tracking-tighter text-blue-500 flex-shrink-0 min-w-0 mt-2">
-            <span class="text-4xl">$99 </span><span class="text-white text-xl">/mounth</span>
+            <span class="text-4xl">$99 </span><span class="text-white text-xl">/month</span>
           </div>
           <button
             type="button"
