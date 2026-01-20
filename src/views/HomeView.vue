@@ -15,7 +15,7 @@ onMounted(() => {
 })
 useAppSeo(
   ref({
-    title: 'Jasa Pembuatan Web Laravel & Vue JS Solusi Bug Fix & API di Cijulang',
+    title: 'Jasa Web Laravel & Vue JS di Cijulang',
     description:
       'Pengembang Web Full-Stack di Cijulang. Ahli Laravel & Vue JS untuk jasa bug fix, integrasi payment gateway, dan sistem custom. Hubungi Reiyan.Dev sekarang!',
   })
