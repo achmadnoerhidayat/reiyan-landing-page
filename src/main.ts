@@ -22,5 +22,5 @@ export const createApp = ViteSSG(
     if (isClient) {
       // Contoh: Analytics atau pengecekan localStorage
     }
-  }
+  },
 )

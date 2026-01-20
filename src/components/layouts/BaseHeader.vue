@@ -2,6 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 const isScrol = ref(false)
 const toggleNav = ref(false)
+const chatwa = ref('')
 const handleScroll = () => {
   // Jika scroll lebih dari 20px, aktifkan mode floating
   isScrol.value = window.scrollY > 20
@@ -10,8 +11,34 @@ const handleScroll = () => {
 const handleBurgetNav = () => {
   toggleNav.value = !toggleNav.value
 }
+const headerItem = [
+  {
+    link: 'home',
+    title: 'Home',
+  },
+  {
+    link: 'layanan',
+    title: 'Layanan',
+  },
+  {
+    link: 'portfolio',
+    title: 'Portfolio',
+  },
+  {
+    link: 'price',
+    title: 'Harga',
+  },
+]
+const formatChatWa = () => {
+  const phone = '6281224738582'
+  const pesan = 'Halo Admin Reiyandev, saya mau tanya...'
+
+  // Ini otomatis ngurusin spasi dan karakter unik
+  chatwa.value = `https://wa.me/${phone}?text=${encodeURIComponent(pesan)}`
+}
 
 onMounted(() => {
+  formatChatWa()
   window.addEventListener('scroll', handleScroll)
 })
 
@@ -33,17 +60,19 @@ onUnmounted(() => {
       ]"
     >
       <div class="text-xl font-extrabold tracking-tighter text-blue-500 flex-shrink-0 min-w-0">
-        Reiyan<span class="text-white">.AI</span>
+        Reiyan<span class="text-white">.DEV</span>
       </div>
 
       <div
         class="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-500"
       >
-        <a href="#home" class="hover:text-white transition">Home</a>
-        <a href="#feature" class="hover:text-white transition">Features</a>
-        <a href="#usecase" class="hover:text-white transition">Use Cases</a>
-        <a href="#pricing" class="hover:text-white transition">Pricing</a>
-        <a href="#faq" class="hover:text-white transition">FAQ's</a>
+        <a
+          :href="`#${data.link}`"
+          class="hover:text-white transition"
+          v-for="(data, key) in headerItem"
+          :key="key"
+          >{{ data.title }}</a
+        >
       </div>
 
       <div class="md:hidden text-white" @click="handleBurgetNav">
@@ -74,6 +103,12 @@ onUnmounted(() => {
           ></path>
         </svg>
       </div>
+      <a
+        :href="chatwa"
+        class="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg text-xs font-bold transition shadow-lg shadow-blue-500/20"
+      >
+        Konsultasi Gratis
+      </a>
     </div>
     <Transition name="fade-slide">
       <div
@@ -82,12 +117,12 @@ onUnmounted(() => {
       >
         <nav class="flex flex-col gap-1 p-2">
           <a
-            v-for="item in ['Home', 'Features', 'Use Cases', 'Pricing', 'Testimonial']"
-            :key="item"
-            href="#"
+            v-for="(data, key) in headerItem"
+            :key="key"
+            :href="`#${data.link}`"
             class="text-slate-300 flex w-full items-center rounded-xl p-4 transition-all hover:bg-white/10 hover:text-white active:scale-95"
           >
-            {{ item }}
+            {{ data.title }}
           </a>
         </nav>
       </div>

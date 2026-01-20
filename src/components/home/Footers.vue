@@ -1,6 +1,4 @@
 <script setup>
-import { ref } from 'vue'
-
 const year = new Date().getFullYear()
 </script>
 <template>
@@ -10,11 +8,12 @@ const year = new Date().getFullYear()
         <div class="space-y-6 col-span-2">
           <div class="flex items-center gap-2 text-xl font-extrabold tracking-tighter">
             <span class="text-blue-500">&lt;/&gt;</span>
-            <span>AI Platform</span>
+            <span>Reiyan.Dev</span>
           </div>
           <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
-            Empowering startups with next-gen AI solutions. Build smarter, scale faster, and
-            innovate with confidence.
+            Solusi profesional untuk perbaikan sistem, penambahan fitur custom, hingga pembangunan
+            infrastruktur web baru. Menggunakan teknologi Laravel & Vue.js untuk menjamin kecepatan
+            akses maksimal dan struktur yang ramah mesin pencari.
           </p>
         </div>
 

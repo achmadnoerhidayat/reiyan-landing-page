@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
+    "@unhead/vue": "^2.1.2",
     "pinia": "^3.0.4",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.26",
@@ -31,7 +32,6 @@
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/tsconfig": "^0.8.1",
-    "@vueuse/head": "^2.0.0",
     "eslint": "^9.39.2",
     "eslint-plugin-oxlint": "~1.35.0",
     "eslint-plugin-vue": "~10.6.2",
