@@ -11,9 +11,7 @@ const year = new Date().getFullYear()
             <span>Reiyan.Dev</span>
           </div>
           <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
-            Solusi profesional untuk perbaikan sistem, penambahan fitur custom, hingga pembangunan
-            infrastruktur web baru. Menggunakan teknologi Laravel & Vue.js untuk menjamin kecepatan
-            akses maksimal dan struktur yang ramah mesin pencari.
+            Fullstack Developer Spesialis Laravel & Vue.js | Berbasis di Cijulanag, Indonesia
           </p>
         </div>
 
@@ -54,7 +52,7 @@ const year = new Date().getFullYear()
           <span id="year">
             {{ year }}
           </span>
-          Reiyan.AI. All rights reserved.
+          Reiyan.DEV. All rights reserved.
         </p>
       </div>
     </div>
