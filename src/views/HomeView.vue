@@ -15,9 +15,9 @@ onMounted(() => {
 })
 useAppSeo(
   ref({
-    title: 'Jasa Web Laravel & Vue JS di Cijulang',
+    title: 'Jasa Web Laravel & Vue TS Cijulang - Expert Clean Architecture',
     description:
-      'Pengembang Web Full-Stack di Cijulang. Ahli Laravel & Vue JS untuk jasa bug fix, integrasi payment gateway, dan sistem custom. Hubungi Reiyan.Dev sekarang!',
+      'Jasa Web Laravel & Vue TS Cijulang. Ahli bug fix, integrasi payment gateway & API logistik. Build sistem custom scalable dengan Clean Architecture. Hubungi Reiyan Dev!',
   })
 )
 </script>

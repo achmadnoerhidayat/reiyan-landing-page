@@ -1,5 +1,6 @@
 import './assets/main.css'
 import { ViteSSG } from 'vite-ssg'
+import { inject } from '@vercel/analytics'
 import { createPinia } from 'pinia'
 import App from './App.vue'
 import routes from './router' // Pastikan ini mengarah ke file router utama kamu
@@ -20,6 +21,7 @@ export const createApp = ViteSSG(
 
     // isClient berguna jika kamu punya kode yang HANYA boleh jalan di browser
     if (isClient) {
+      inject()
       // Contoh: Analytics atau pengecekan localStorage
     }
   },
